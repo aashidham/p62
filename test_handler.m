@@ -10,6 +10,8 @@ ro = 1000; %density of water in kg/m^3
 A = 0.01; %cross-sectional area of water tank in m^2
 Mo = 1; %initial mass of rocket in kg
 
+w2(imag(w2) ~= 0) = 0
+
 u = diff(w(:,1))/0.0001; %exhaust velocity for ideal gas derivation
 u2 = diff(w2)/0.0001; %exhaust velocity for bernoulli derivation
 
